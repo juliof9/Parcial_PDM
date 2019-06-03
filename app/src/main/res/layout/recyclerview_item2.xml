@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/item_landscape"
+              android:layout_width="match_parent">
+    <androidx.cardview.widget.CardView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:cardCornerRadius="4dp"
+            app:cardMaxElevation="4dp"
+            app:cardElevation="2dp"
+            app:contentPadding="5dp"
+            android:padding="5dp"
+            android:layout_margin="10dp"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="horizontal"
+                    android:padding="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                    <TextView
+                            android:id="@+id/land_nombre_equipoA"
+                            android:text="EquipoA"
+                            android:layout_width="match_parent"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                    />
+                    <TextView
+                            android:id="@+id/land_puntaje_EquipoA"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Puntaje"
+                            android:layout_weight="1"
+                    />
+                </LinearLayout>
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                    <TextView
+                            android:id="@+id/land_item_equipoB"
+                            android:text="EquipoB"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"/>
+                    <TextView
+                            android:id="@+id/land_puntaje_EquipoB"
+                            android:text="Puntaje"
+                            android:layout_width="match_parent"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
